@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manohar L U · Java Full Stack &amp; AI Developer</title>
+    <meta name="description" content="Manohar L U, Java Full Stack and AI Developer in Bengaluru. Backend services with Spring Boot, React frontends, and applied machine learning projects." />
+    <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Manohar L U · Java Full Stack & AI Developer" />
+    <meta property="og:description" content="Backend services with Spring Boot, React frontends, and applied machine learning projects." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#top" aria-label="Back to top">Manohar L U</a>
+
+        <nav class="nav" id="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a href="#about" data-nav>About</a></li>
+            <li><a href="#experience" data-nav>Experience</a></li>
+            <li><a href="#projects" data-nav>Projects</a></li>
+            <li><a href="#skills" data-nav>Skills</a></li>
+            <li><a href="#education" data-nav>Education</a></li>
+            <li><a href="#contact" data-nav>Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="btn btn--small" href="assets/resume.pdf" target="_blank" rel="noopener" data-resume>Resume</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" id="menu-toggle">
+            <span class="sr-only">Menu</span>
+            <span class="menu-toggle__icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top" aria-labelledby="hero-name">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow reveal-in" data-hero="location"></p>
+            <h1 class="hero__name" id="hero-name">
+              <span class="line"><span>Manohar</span></span>
+              <span class="line"><span>L U</span></span>
+            </h1>
+            <p class="hero__role reveal-in" data-hero="role"></p>
+            <p class="hero__tagline reveal-in" data-hero="tagline"></p>
+            <p class="hero__status reveal-in" data-hero="status"></p>
+
+            <div class="hero__actions reveal-in">
+              <a class="btn btn--primary" href="#contact">Contact me</a>
+              <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">View resume</a>
+              <a class="btn btn--ghost" href="assets/resume.pdf" download>Download PDF</a>
+            </div>
+
+            <ul class="socials reveal-in" data-socials></ul>
+          </div>
+
+          <figure class="hero__photo">
+            <img src="assets/profile-photo.webp" alt="Portrait of Manohar L U" width="534" height="600" fetchpriority="high" />
+          </figure>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+          <span class="scroll-cue__line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container split">
+          <header class="section-head reveal">
+            <p class="section-index">01</p>
+            <h2 id="about-title">About</h2>
+          </header>
+          <div class="about reveal">
+            <div class="about__text" data-about></div>
+            <dl class="facts" data-facts></dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">02</p>
+            <h2 id="experience-title">Experience</h2>
+          </header>
+          <ol class="timeline" data-experience></ol>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">03</p>
+            <h2 id="projects-title">Projects</h2>
+          </header>
+          <div class="projects" data-projects></div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-index">04</p>
+            <h2 id="skills-title">Skills</h2>
+          </header>
+          <div class="skills" data-skills></div>
+          <p class="skills__note reveal" data-working></p>
+        </div>
+      </section>
+
+      <!-- Education and credentials -->
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="container split">
+          <header class="section-head reveal">
+            <p class="section-index">05</p>
+            <h2 id="education-title">Education</h2>
+          </header>
+          <div class="reveal">
+            <ol class="entries" data-education></ol>
+
+            <h3 class="sub-title">Certifications</h3>
+            <ul class="entries" data-certifications></ul>
+
+            <h3 class="sub-title">Achievements</h3>
+            <ul class="entries" data-achievements></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="container split">
+          <header class="section-head reveal">
+            <p class="section-index">06</p>
+            <h2 id="contact-title">Contact</h2>
+            <p class="contact__intro">
+              Send a message here, or reach me directly by email or phone.
+            </p>
+            <ul class="contact-links" data-contact-links></ul>
+          </header>
+
+          <div class="chat reveal">
+            <div class="chat__head">
+              <span class="chat__dot" aria-hidden="true"></span>
+              <span>Message Manohar</span>
+            </div>
+
+            <div class="chat__thread" aria-live="polite">
+              <p class="bubble bubble--in">Hi, thanks for stopping by. Leave your name, email and a message.</p>
+              <p class="bubble bubble--out" id="preview" hidden></p>
+            </div>
+
+            <form class="chat__form" id="contact-form" novalidate>
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required />
+                <p class="field__error" id="cf-name-error"></p>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="200" required />
+                <p class="field__error" id="cf-email-error"></p>
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="4" maxlength="3000" required></textarea>
+                <p class="field__error" id="cf-message-error"></p>
+              </div>
+
+              <div class="hp" aria-hidden="true">
+                <label>Leave this empty <input name="website" tabindex="-1" autocomplete="off" /></label>
+              </div>
+
+              <div class="chat__footer">
+                <button class="btn btn--primary" type="submit" id="send-btn">Send message</button>
+                <p class="chat__status" id="form-status" role="status"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Project details -->
+    <dialog class="dialog" id="project-dialog" aria-labelledby="dialog-title">
+      <div class="dialog__inner">
+        <div class="dialog__head">
+          <div>
+            <p class="dialog__period" id="dialog-period"></p>
+            <h3 id="dialog-title"></h3>
+          </div>
+          <button class="icon-btn" type="button" data-close aria-label="Close details">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="dialog__body" id="dialog-body"></div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="site-footer__name">Manohar L U</p>
+          <p class="muted">Backend and full stack, with a bit of machine learning.</p>
+        </div>
+        <ul class="socials" data-footer-socials></ul>
+        <p class="muted">© <span id="year"></span> Manohar L U · Updated <span data-updated></span></p>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
